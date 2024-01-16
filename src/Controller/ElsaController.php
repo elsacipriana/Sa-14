@@ -16,7 +16,7 @@ class ElsaController extends AbstractController
         ]);
     }
 
-    #[Route('/elsa', name: 'app_elsa')]
+    #[Route('/home', name: 'app_home')]
     public function home()
     {
         return $this->render('elsa/home.html.twig', [

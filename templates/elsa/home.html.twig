@@ -1,16 +1,56 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ElsaController!{% endblock %}
+{% block title %}Page d'accueil{% endblock %}
 
 {% block body %}
 <style>
-    <style>
 .NomPrenom {
-    text-align:center;
+    transform: translate(750px, -100px); 
 }
+    
+.SousTitre {
+    color: red;
+    transform: translate(75px, 200px);
+} 
+
+.image {
+    border-radius: 50%;
+    height: 375px;
+    width: 375px;
+    transform : translate(300px, 200px);
+}
+
+.PourEnSavoirPlus {
+  background-color: rgb(192, 19, 19);
+  color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateX(750px);
+}
+
+
+
+
 </style>
 
+<img class="image" src="https://i.pinimg.com/564x/4f/6a/e8/4f6ae80a17431bc1b394449cfb93ea8a.jpg">
 <div class="NomPrenom">
-    <p> Elsa Amoussou</p>
+   <h2>Elsa Amoussou Cipriana <br> <h3><span class="SousTitre">Etudiante</span></h3>
+   <br><h4> Je suis étudiante en 1ère année de BUT Réseaux&Télécommunications. </h4>
+   <br> <h4>Je suis capable d'administrer des réseaux, de connecter des entreprises et utilisateurs,<br>
+    et de créer des outils et applications informatiques. </h4></h2>
   </div>
+
+  <button class="PourEnSavoirPlus">
+   POUR EN SAVOIR PLUS
+   </button>
+
+ 
+
+
+
+ 
 {% endblock %}
