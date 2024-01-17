@@ -1,0 +1,149 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block body %}
+<style>
+.NomPrenom {
+    transform: translate(750px, -100px); 
+}
+    
+.SousTitre {
+    color: red;
+    transform: translate(75px, 200px);
+} 
+
+.image {
+    border-radius: 50%;
+    height: 375px;
+    width: 375px;
+    transform : translate(300px, 200px);
+}
+
+.PourEnSavoirPlus {
+  background-color: rgb(192, 19, 19);
+  color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateX(750px);
+  margin-right: 25px;
+}
+
+.PourEnSavoirPlus:link {
+  color: white;
+}
+
+.PourEnSavoirPlus:active {
+  color: orange;
+}
+
+.Portfolio {
+  color: rgb(187, 14, 14);
+  background-color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateX(750px);
+ }
+
+ .mail {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transform : translate(750px, -100px);
+ }
+
+ .Loisir {
+  transform: translate(350px, 500px);
+ }
+
+ .basket {
+  transform: translate(350px, 550px);
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+ }
+
+ .volley {
+  transform: translate(350px, 550px);
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+ }
+
+ .echecs {
+  transform: translate(350px, 550px);
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+
+ }
+
+ .pingpong {
+  transform: translate(350px, 550px);
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+ }
+
+ .suite {
+  margin-top: 1000px;
+ }
+
+
+
+
+</style>
+
+<img class="image" src="https://i.pinimg.com/564x/4f/6a/e8/4f6ae80a17431bc1b394449cfb93ea8a.jpg">
+<div class="NomPrenom">
+   <h2>Elsa Amoussou Cipriana <br> <h3><span class="SousTitre">Student</span></h3>
+   <br><h4> I am a first-year student of BUT Networks and Telecommunications. </h4>
+   <br> <h4>I am able to administer networks, connect companies and users,<br>
+    and create computer tools and applications. </h4></h2>
+  </div>
+
+  <button class="PourEnSavoirPlus">
+   <a href="#loisir">TO FIND OUT MORE</a>
+   </button>
+
+   <button class="Portfolio">
+    My Portfolio
+   </button>
+
+
+
+
+
+   
+   
+   
+  
+   <div class="Loisir">
+   <h2><span color: red;>POUR EN SAVOIR PLUS</span></h2>
+     <h4>Immersed in both team sports and strategic games, my hobbies revolve <br>
+     around shared action and thoughtful challenges. From playing fields to game boards, I find joy <br>
+     in colective dynamics and well-thought-out strategies.  </h4>
+     </div>
+
+
+<img class="basket" src="https://i.pinimg.com/564x/32/0a/60/320a60bdaa449719bdd15f042f40c7e5.jpg" alt="Basket-ball">
+<img class="volley" src="https://i.pinimg.com/564x/0b/58/44/0b5844c1edd68ab0367cc4c552a318a7.jpg">
+<img class="echecs" src="https://i.pinimg.com/564x/d7/d0/31/d7d0318acf8d7febe3948d7764442bc9.jpg">
+<img class="pingpong" src="https://i.pinimg.com/564x/ee/bd/79/eebd79def5faed3fed4f1a7f97558917.jpg">
+<a name="loisir" ></a>
+
+
+ <p class="suite">
+  suite 
+  </div>
+
+
+
+ 
+{% endblock %}
