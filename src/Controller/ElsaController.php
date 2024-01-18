@@ -23,4 +23,12 @@ class ElsaController extends AbstractController
             
         ]);
     }
+
+    #[Route('/elsa/loisirs', name: 'Loisirs')]
+    public function loisirs()
+    {
+        return $this->render('elsa/loisirs.html.twig', [
+            
+        ]);
+    }
 }
