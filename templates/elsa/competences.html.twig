@@ -1,21 +1,203 @@
 {% extends 'base.html.twig' %}
 
+
+
 {% block title %}{% endblock %}
 
+
+
 {% block body %}
+
 <style>
 
+
+
 .administrer {
+
  transform: translateY(50px);
+
 }
-   
+
+
+
+.img1 {
+
+transform: translateX(600px);
+
+  position: absolute;
+
+}
+
+
+
+.texte1 {
+
+   color: red;
+
+    transform: translateX(375px);
+
+    font-weight: bold;
+
+  }
+
+
+
+.texte1:hover {
+
+  color:white;
+
+  font-weight: bold;
+
+}
+
+
+.connecter {
+transform: translate(700px, 600px);
+}
+
+.competence1 {
+ transform: translateY(250px);
+}
+
+.competence2 {
+transform: translate(800px, 700px);
+}
+
+.continuer1 {
+transform: translateY(200px);
+}
+
+.continuer2 {
+transform: translate(800px, 800px);
+}
+
+.retour1 {
+transform: translate(800px, 800px);
+}
+
+.programmer {
+ transform: translateY(1000px);
+}
+
+.competence3 {
+transform: translateY(1050px);
+}
+
+.retour2 {
+transform: translateY(1050px);
+}
+
+.essai {
+transform: translateY(2000px);
+}
+
+
+
 </style>
 
+
+
 <div class="administrer" >
+<div id="1"></div>
   <h2> ADMINISTRER </h2><br>
-La compétence d'administration dans le domaine informatique est essentielle pour assurer <br>
+
+<h4>La compétence d'administration dans le domaine informatique est essentielle pour assurer <br>
+
 le bon fonctionnement des systèmes informatiques. Les administrateurs système sont responsables <br>
+
 de la configuration, de la maintenance et de la surveillance des réseaux informatiques, des serveurs <br>
-et des bases de données;
+
+et des bases de données.</h4>
+
 </div>
+<div class="competence1">
+<ul> <h4>
+ <li>Maîtrise des logiciels clients (Putty, Cisco Packet Tracer...) <br></li>
+<li>Configuration de matériels (switchs, pc...) <br></li>
+<li>Environnement de développement <br></li>
+<li>Installation d'un poste client<br></li>
+</h4>
+</ul>
+
+</div>
+
+
+
+
+
+<img class="img1" src="/img.png" >
+
+<div class="texte1">
+<h2>Simulation <br>de réseaux</h2>
+</div>
+
+<button class="continuer1">
+<a href="#2"> <h5>Continuer</h5></a>
+</button>
+
+
+<div class="connecter" >
+<div id="2"></div>
+  <h2> CONNECTER </h2><br>
+
+<h4> Dans le domaine professionnel, connecter les appareils peut signifier intégrer des systèmes <br>
+informatiques, des dispositifs IoT, des équipements de production ou d'autres infrastructures <br>
+technologiques. Cela nécessite une compréhension approfondie des protocoles de communication, des <br>
+normes industrielles et des technologies émergentes.</h4>
+</div>
+
+<div class="competence2">
+<ul> <h4>
+ <li>Soudure des câbles <br></li>
+<li>Connexion en réel et en simulation <br> des équipements</li>
+<li> <br></li>
+<li><br></li>
+</h4>
+</ul>
+</div>
+
+<button class="continuer2">
+<a href="#3"> <h5>Continuer</h5></a>
+</button>
+
+<button class="retour1">
+<a href="#1"> <h5>Retour</h5></a>
+</button>
+
+
+<div class="programmer" >
+<div id="3"></div>
+  <h2> PROGRAMMER </h2><br>
+
+<h4> Les développeurs, ingénieurs logiciels et experts en informatiques sont <br>
+constamment engagés dans la conception, le développement et l'amélioration d'outils <br>
+et d'applications visant à résoudre des problèmes, à simplifier des tâches complexes et <br>
+à répondre aux besoins de la société.
+</div>
+
+<div class="competence3" >
+<ul> <h4>
+ <li>Maîtrise des logiciels de programmation <br>(C, python, HTML, CSS...)</li>
+<li></li>
+<li> <br></li>
+<li><br></li>
+</h4>
+</ul>
+</div>
+
+<button class="continuer3">
+<a href="#"> <h5>Continuer</h5></a>
+</button>
+
+
+<button class="retour2">
+<a href="#2"> <h5>Retour</h5></a>
+</button>
+
+
+<div class="essai">
+SUITE
+</div>
+
+
 {% endblock %}
