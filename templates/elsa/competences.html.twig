@@ -2,11 +2,15 @@
 
 
 
-{% block title %}{% endblock %}
+{% block title %}Mes compétences{% endblock %}
 
 
 
 {% block body %}
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
 
 <style>
 
@@ -36,7 +40,7 @@ transform: translateX(600px);
 
     transform: translateX(375px);
 
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 
   }
 
@@ -52,7 +56,7 @@ transform: translateX(600px);
 
 
 .connecter {
-transform: translate(700px, 600px);
+transform: translateY(600px);
 }
 
 .competence1 {
@@ -60,19 +64,29 @@ transform: translate(700px, 600px);
 }
 
 .competence2 {
-transform: translate(800px, 700px);
+transform: translateY(700px);
 }
 
 .continuer1 {
 transform: translateY(200px);
+background-color: rgb(192, 19, 19);
+  color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 25px;
+  border-radius: 50px;
+  border: 3px double #ffffff;
 }
 
 .continuer2 {
-transform: translate(800px, 800px);
+transform: translateY(800px);
 }
 
 .retour1 {
-transform: translate(800px, 800px);
+transform: translateY( 800px);
 }
 
 .programmer {
@@ -89,6 +103,26 @@ transform: translateY(1050px);
 
 .essai {
 transform: translateY(2000px);
+}
+
+.img3 {
+  position: absolute;
+  transform: translate(600px, 850px);
+
+}
+
+.continuer3 {
+  transform: translateY(1050px);
+background-color: rgb(192, 19, 19);
+  color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 25px;
+  border-radius: 50px;
+  border: 3px double #ffffff;
 }
 
 
@@ -186,13 +220,15 @@ et d'applications visant à résoudre des problèmes, à simplifier des tâches 
 </div>
 
 <button class="continuer3">
-<a href="#"> <h5>Continuer</h5></a>
+<a href="#"> <h5>Voir Mon CV</h5></a>
 </button>
 
 
 <button class="retour2">
 <a href="#2"> <h5>Retour</h5></a>
 </button>
+
+<img class="img3" src="/capture.png" >
 
 
 <div class="essai">
