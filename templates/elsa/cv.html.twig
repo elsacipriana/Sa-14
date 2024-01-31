@@ -1,0 +1,149 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV{% endblock %}
+
+{% block body %}
+
+
+
+<style>
+    .cote {
+transform: translate(700px,-150px);
+}
+
+.debut {
+transform: translate(150px, 150px);
+}
+
+.gras{
+font-weight: bold;
+font-size: 26px;
+color: red ;
+}
+
+.soustitre {
+font-weight: bold;
+opacity: 0.5;
+font-size: 18px;
+ }
+
+.total {
+font-size: 18px;}
+
+.formulaire {
+background-color: rgb(192, 19, 19);
+  color: white;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 25px;
+  border-radius: 50px;
+  border: 3px double #ffffff;
+}
+</style>
+
+
+<div class="total">
+
+<div class="debut">
+<div class="gras">
+LANGUES
+</div>
+
+<p>
+Français
+</p>
+<p>
+Anglais
+</p>
+
+<div class="gras">
+CENTRES D'INTERET
+</div>
+
+<p>
+Sport 
+</p>
+
+</div>
+
+
+
+
+<div class="cote">
+ <div class="gras" >Elsa Amoussou </div> <br>
+<span style="font-size: 21px;">Développeuse web </span> <br>
+Etudiante passionnée en réseaux et télécommunications, je suis déterminée <br>
+à approfondir mes connaissances dans le domaine. Actuellement en cours <br>
+de spécialisation, je me distingue par ma compréhensions des protocoles de <br>
+communication et ma capacité à appliquer ces compétences dans des <br>
+projets pratiques.Engagée dans une démarche d'apprentissage continu, je <br>
+suis prête à contribuer à des projets innovants en mettant en oeuvre <br>
+mes compétences techniques et ma créativité.
+
+<br>
+<br>
+<br>
+
+<p> 
+Mail: elsaciprianaa@gmail.com </p>
+
+<p> Résidence: Roanne (42300) </p>
+
+<p>
+Age: 17 ans </p>                     
+
+<div class="gras">
+DIPLOMES ET FORMATIONS
+</div>
+
+<div>
+<div class="soustitre">
+Baccalauréat </div><br>
+Ufuk - Bénin - De septembre 2022 à juin 2023
+</div>
+
+<div>
+<div class="soustitre">
+1ère année BUT Réseaux& Télécommunications </div> <br>
+IUT de Roanne - Roanne - depuis Septembre 2023
+</div>
+
+<div class="gras">
+EXPERIENCES PROFESSIONNELLES
+</div>
+
+<div class="soustitre">
+Assistante réceptionniste </div><br>
+Odalys Vacances - Lyon - De janvier 2023 à février 2023
+
+<div class="soustitre">
+Projet de site personnel </div><br>
+IUT de Roanne - Roanne - depuis Janvier 2024
+
+<div class="gras">
+COMPETENCES
+</div>
+
+<p>
+Persévérance
+</p>
+
+<p>
+Maîtrise des langages de programmation 
+</p>
+
+<p>
+Capacité d'administrer des réseaux
+</p>
+
+</div>
+</div>
+
+<button class="formulaire">
+<a href="http://127.0.0.1:8000/elsa/formulaire" target="_blank">Télécharger le CV</a>
+</button>
+
+{% endblock %}

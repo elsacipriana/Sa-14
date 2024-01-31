@@ -80,4 +80,33 @@ class ElsaController extends AbstractController
 
     }
 
+
+    #[Route('/elsa/cv', name: 'Cv')]
+
+    public function cv()
+
+    {
+
+        return $this->render('elsa/cv.html.twig', [
+
+            
+
+        ]);
+
+    }
+
+ #[Route('/elsa/formulaire', name: 'Formulaire')]
+
+    public function formulaire()
+
+    {
+
+        return $this->render('elsa/formulaire.html.twig', [
+
+            
+
+        ]);
+
+    }
+
 }
